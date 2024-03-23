@@ -51,21 +51,21 @@ function displaySmoothie(smoothie) {
 function getSmoothieImage(ingredients) {
     // Choose image based on selected ingredients
     const smoothieImages = {
-        'Banana': 'img/smoothie_banana.jpg',
-        'Strawberry': 'img/smoothie_strawberry.jpg',
-        'Blueberry': 'img/smoothie_blueberry.jpg',
-        'Spinach': 'img/smoothie_spinach.jpg',
-        'Kale': 'img/smoothie_kale.jpg',
-        'Banana, Strawberry': 'img/smoothie_banana_strawberry.jpg',
-        'Banana, Blueberry': 'img/smoothie_banana_blueberry.jpg',
-        'Strawberry, Blueberry': 'img/smoothie_strawberry_blueberry.jpg',
-        'Banana, Strawberry, Blueberry': 'img/smoothie_banana_strawberry_blueberry.jpg',
-        'Banana, Spinach': 'img/smoothie_banana_spinach.jpg',
-        'Banana, Kale': 'img/smoothie_banana_kale.jpg',
+        'Banana': 'smoothie_banana.jpg',
+        'Strawberry': 'smoothie_strawberry.jpg',
+        'Blueberry': 'smoothie_blueberry.jpg',
+        'Spinach': 'smoothie_spinach.jpg',
+        'Kale': 'smoothie_kale.jpg',
+        'Banana, Strawberry': 'smoothie_banana_strawberry.jpg',
+        'Banana, Blueberry': 'smoothie_banana_blueberry.jpg',
+        'Strawberry, Blueberry': 'smoothie_strawberry_blueberry.jpg',
+        'Banana, Strawberry, Blueberry': 'smoothie_banana_strawberry_blueberry.jpg',
+        'Banana, Spinach': 'smoothie_banana_spinach.jpg',
+        'Banana, Kale': 'smoothie_banana_kale.jpg',
     };
 
     // Return default image if no specific combination found
-    const defaultImage = 'img/smoothie_default.jpg';
+    const defaultImage = 'smoothie_default.jpg';
     const key = ingredients.sort().join(', ');
     return smoothieImages[key] ? smoothieImages[key] : defaultImage;
 }
